@@ -19,7 +19,6 @@ class BookController extends Controller
         $authors = Author::get();
         $genres = Genre::get();
         $publishers = Publisher::get();
-        return $books;
         return view('layout.books',compact('books','authors','genres','publishers'));
     }
 

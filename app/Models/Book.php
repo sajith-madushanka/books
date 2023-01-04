@@ -17,11 +17,12 @@ class Book extends Model
     }
 
     public function genre(){
-        return $this->hasOne(genre::class);
-    } 
+		return $this->belongsTo(Genre::class, 'book_genres', 'book_id', 'genre_id');
+	}
+   
 
     public function author(){
-        return $this->belongsTo(Author::class, 'book_author','book_id');
+        return $this->belongsTo(Author::class, 'book_authors');
     } 
     public $timestamps = false;
 }

@@ -79,8 +79,6 @@
                     <th style="width: 10%">ISBN</th>
                     <th style="width: 10%">Published Date</th>
                     <th style="width: 10%">Publisher</th>
-                    <th style="width: 10%">Author</th>
-                    <th style="width: 10%">Genre</th>
                     <th style="width: 10%">Action</th>
                 </thead>
                 <tbody>	
@@ -92,8 +90,6 @@
                         <td>{{$t->ratings}}</td>
                         <td>{{$t->isbn}}</td>
                         <td>{{$t->published_date}}</td>
-                        <td>{{$t->publisher->name}}</td>
-                        <td>{{$t->}}</td>
                         <td>{{$t->publisher->name}}</td>
                         <td>
                              <a href="javascript:void(0)" class="edit_auth btn btn-xs btn-primary" data-id="{{$t->author_id}}" data-f="{{$t->first_name}}" data-m="{{$t->middle_name}}" data-l="{{$t->last_name}}" >Edit</a>
